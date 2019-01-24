@@ -1,0 +1,23 @@
+﻿@model Domain.Entities.Product
+
+<div class="row rounded" style="width:100%; background-color: #f7f7f7; padding: 15px">
+    <div style="width:890px">
+        <div>
+            <h5>
+                @Model.Name
+                <a class="float-right font-weight-light">@Model.Price.ToString("# грн.")</a>
+            </h5> 
+        </div>
+    </div>
+    
+    <div>
+        <div><span class="lead"><small>@Model.Description</small></span></div>
+        @using (Html.BeginForm("AddToCart", "Cart"))
+        {
+            @Html.HiddenFor(x => x.ProductId)
+            @Html.Hidden("returnUrl", Request.Url.PathAndQuery)
+            <input type="submit" class="btn btn-dark float-right" value="В корзину" />
+        }
+    </div>
+</div>
+<br />
