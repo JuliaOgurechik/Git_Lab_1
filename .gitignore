@@ -7,8 +7,10 @@ UnitTests/bin/
 
 WebUI/bin/
 
-*.[a-z]l
+
 
 *.lka
 *.kla
-*akl
+*.akl
+
+*.[a-z]l
