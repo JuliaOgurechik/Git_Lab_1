@@ -7,5 +7,5 @@ UnitTests/bin/
 
 WebUI/bin/
 
-*.debug[l]
+*.[a-z]l
 
