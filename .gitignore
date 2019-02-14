@@ -8,6 +8,5 @@ UnitTests/bin/
 WebUI/bin/
 
 
-*.l*
-
+*.?l*
 
